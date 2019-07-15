@@ -34,95 +34,137 @@
     <link type="text/css" href="./assets/css/argon.css?v=1.1.0" rel="stylesheet">
 </head>
 
-<body>
-    <header class="header-global">
-        <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
-            <div class="container">
-                </button>
-                <div class="navbar-collapse collapse" id="navbar_global">
-                    <div class="navbar-collapse-header">
+<body class="bg-default">
+    <div class="main-content">
+        <!-- Navbar -->
+        <nav class="navbar navbar-top navbar-horizontal navbar-expand-md navbar-dark">
+            <div class="container px-4">
+                <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                    <!-- Collapse header -->
+                    <div class="navbar-collapse-header d-md-none">
                         <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="../index.html">
+                                    <img src="../assets/img/brand/blue.png">
+                                </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+                  <span></span>
+                  <span></span>
+                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
-        <section class="section section-shaped section-lg">
-            <div class="shape shape-style-1 bg-gradient-default">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="container pt-lg-md">
-                <div class="row justify-content-center">
-                    <div class="col-lg-5">
-                        <div class="card bg-secondary shadow border-0">
-                            <div class="card-header bg-white pb-2">
-                                <div class="btn-wrapper text-center">
-                                    <div class="text-muted text-center mb-3">Login</div>
-                                </div>
-                            </div>
-                            <div class="card-body px-lg-5 py-lg-5">
-                                <div class="text-center text-muted mb-4">
-                                </div>
-                                <form role="form">
-                                    <div class="form-group mb-3">
-                                        <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-email-83"></i></span>
-                                            </div>
-                                            <input class="form-control" placeholder="Email" type="email">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="input-group input-group-alternative">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
-                                            </div>
-                                            <input class="form-control" placeholder="Password" type="password">
-                                        </div>
-                                    </div>
-                                    <div class="custom-control custom-control-alternative custom-checkbox">
-                                        <input class="custom-control-input" id=" customCheckLogin" type="checkbox">
-                                        <label class="custom-control-label" for=" customCheckLogin"><span>Remember me</span></label>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="button" class="btn btn-primary my-4">Sign in</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-6">
-                                <a href="#" class="text-light"><small>Forgot password?</small></a>
-                            </div>
-                            <div class="col-6 text-right">
-                                <a href="#" class="text-light"></a>
-                            </div>
+        <!-- Header -->
+        <div class="header bg-gradient-default py-7 py-lg-8">
+            <div class="container">
+                <div class="header-body text-center mb-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-md-6">
+                            <h1 class="text-white">Sistem Informasi <br> Pelaporan Hafalan & Murojaah Santri</h1>
+                            <!-- <p class="text-lead text-light">Use these awesome forms to login or create new account in your project for free.</p> -->
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="separator separator-bottom separator-skew zindex-100">
+                <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <polygon class="fill-default" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+            </div>
+        </div>
+        <!-- Page content -->
+        <div class="container mt--8 pb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 col-md-7">
+                    <div class="nav-wrapper">
+                        <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-icons-text" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link mb-sm-3 mb-md-0 active" id="tabs-icons-text-1-tab" data-toggle="tab" href="#tabs-icons-text-1" role="tab" aria-controls="tabs-icons-text-1" aria-selected="true"><i class="ni ni-single-02 mr-2"></i>Admin / Musyrif</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mb-sm-3 mb-md-0" id="tabs-icons-text-2-tab" data-toggle="tab" href="#tabs-icons-text-2" role="tab" aria-controls="tabs-icons-text-2" aria-selected="false"><i class="ni ni-hat-3 mr-2"></i>Wali Santri</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="tabs-icons-text-1" role="tabpanel" aria-labelledby="tabs-icons-text-1-tab">
+                                    <div class="container">
+                                        <form role="form">
+                                            <div class="form-group-lg mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+                                                    </div>
+                                                    <input class="form-control form-control-alternative" type="text" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Password" type="password">
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="button" class="btn btn-primary mt-4">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-icons-text-2" role="tabpanel" aria-labelledby="tabs-icons-text-2-tab">
+                                    <div class="container">
+                                        <form role="form">
+                                            <div class="form-group-lg mb-3">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-single-02"></i></span>
+                                                    </div>
+                                                    <input class="form-control form-control-alternative" type="text" placeholder="Username">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="input-group input-group-alternative">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="Password" type="password">
+                                                </div>
+                                            </div>
+                                            <div class="text-center">
+                                                <button type="button" class="btn btn-primary mt-4">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 text-center">
+                            <a href="#" class="text-light"><small>Forgot password?</small></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Argon Scripts -->
     <!-- Core -->
-    <script src="./assets/vendor/jquery/jquery.min.js"></script>
-    <script src="./assets/vendor/popper/popper.min.js"></script>
-    <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="./assets/vendor/headroom/headroom.min.js"></script>
+    <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Optional JS -->
-    <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
-    <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
-    <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="./assets/vendor/chart.js/dist/Chart.extension.js"></script>
     <!-- Argon JS -->
-    <script src="./assets/js/argon.js?v=1.1.0"></script>
+    <script src="./assets/js/argon.js?v=1.0.0"></script>
 </body>
 
 </html>
